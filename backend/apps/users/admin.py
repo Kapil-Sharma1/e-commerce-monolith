@@ -9,7 +9,7 @@ from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib.auth.models import Group
 from django.template.response import TemplateResponse
 
-from apps.users.models import User
+from apps.users.models import User, Address
 from apps.users.forms import UserChangeForm, UserCreationForm
 from apps.util.admin import BaseModelAdmin
 
@@ -48,7 +48,12 @@ class UserAdmin(BaseUserAdmin):
     readonly_fields = ['uid', 'last_login', 'registered_at']
 
 
+class AddressModelAdmin(BaseModelAdmin):
+    list_display = ('address_line_1', 'city', 'city', 'country', 'user')
+
+
 admin.site.register(User, UserAdmin)
+admin.site.register(Address, AddressModelAdmin)
 admin.site.unregister(SocialAccount)
 admin.site.unregister(SocialApp)
 admin.site.unregister(SocialToken)
