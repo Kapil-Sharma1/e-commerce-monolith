@@ -1,5 +1,10 @@
 from uuid import uuid4
 import time
+
+from django.core.validators import(
+    MaxValueValidator,
+    MinValueValidator
+)
 from django.contrib.auth.models import(
     AbstractBaseUser, 
     BaseUserManager, 
@@ -9,7 +14,7 @@ from django.db import models
 from django.utils import timezone
 from django.db.models import Sum
 
-from apps.util.models import NCAbstractBaseModel
+from apps.util.models import AbstractBaseModel
 from apps.util.utils import get_s3_url
 
 def profile_photo(instance, filename):
@@ -101,3 +106,26 @@ class User(AbstractBaseUser, PermissionsMixin):
         if self.email:
             return self.email
         return f'{self.full_name} - {self.phone_number}'
+
+
+class Address(AbstractBaseModel):
+    address_line_1 = models.TextField()
+    address_line_2 = models.TextField(null=True, blank=True)
+    landmark = models.CharField(max_length=128, null=True, blank=True)
+    city = models.CharField(max_length=64)
+    state = models.CharField(max_length=64)
+    pincode = models.IntegerField(validators=[MaxValueValidator(999999),
+                                            MinValueValidator(100000)])
+    country = models.CharField(max_length=5, default='India', editable=False)
+    is_default = models.BooleanField(default=False)
+    user = models.ForeignKey(
+        to=User,
+        on_delete=models.CASCADE,
+        related_name='addresses'
+    )
+
+    def __str__(self):
+        return f'{self.address_line_1} : {self.city} : {self.state}' 
+
+    def __repr__(self):
+        return f'{self.address_line_1} : {self.city} : {self.state}'
