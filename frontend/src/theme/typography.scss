@@ -1,0 +1,204 @@
+@import './variables.scss', './transitions.scss';
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  src: url('../assets/fonts/Montserrat-Regular.ttf');
+}
+// ====
+
+// h1 {
+//   font-family: 'Montserrat';
+//   font-style: normal;
+//   font-weight: bold;
+//   font-size: 40px;
+//   line-height: 51px;
+// }
+
+button:not(.custom),
+a.link-btn {
+  padding: 12px $spacing-2;
+  color: $white;
+  border: none;
+  border-radius: $border-radius;
+  cursor: pointer;
+  transition: all $transition-short;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+
+  &.primary {
+    background-color: $Green;
+  }
+  &.primary:hover {
+    background-color: $button-primary-hover;
+  }
+  &.primary:active {
+    background-color: $button-primary-active;
+  }
+
+  &.danger {
+    background-color: $danger;
+  }
+  &.danger:hover {
+    background-color: $button-danger-hover;
+  }
+  &.danger:active {
+    background-color: $button-danger-active;
+  }
+
+  &.secondary {
+    background-color: $white;
+    color: $Green;
+    border: 1px solid $Green;
+  }
+  &.secondary:hover {
+    background-color: $button-secondary-hover;
+  }
+  &.secondary:active {
+    background-color: $button-secondary-active;
+  }
+
+  &.secondary.danger {
+    background-color: $white;
+    color: $danger;
+    border: 1px solid $danger;
+  }
+  &.secondary.danger:hover {
+    background-color: $button-secondary-danger-hover;
+  }
+  &.secondary.danger:active {
+    background-color: $button-secondary-danger-active;
+  }
+
+  &.tertiary {
+    background-color: transparent;
+    color: $Green;
+  }
+  &.tertiary:active {
+    color: $button-tertiary-active;
+  }
+
+  &:disabled:not(.loading) {
+    color: $grey-4;
+    background-color: $grey-2;
+    cursor: not-allowed;
+    border: none;
+  }
+
+  &.loading {
+    cursor: progress;
+    animation: btnShimmer 3s infinite;
+    background: linear-gradient(to right, $grey-2 4%, $grey-1 25%, $grey-2 36%);
+    background-size: 1000px 100%;
+  }
+
+  & > svg {
+    margin-right: $spacing-1;
+    vertical-align: middle;
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &.icon-btn {
+    // FIXME: maybe handle centering better 
+    margin: 0;
+    padding: 13px 0px;
+    padding-left: 2px;
+    text-align: center;
+
+    & > svg {
+      margin: 0;
+    }
+  }
+
+  &.link-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+svg {
+  transition: transform $transition-short;
+
+  &.primary {
+    fill: $Green;
+  }
+  &.secondary {
+    fill: $Blue;
+  }
+  &.light {
+    fill: white;
+  }
+  &.dark {
+    fill: black;
+  }
+  &.subtle {
+    fill: $grey-4;
+  }
+  &.danger {
+    fill: $danger;
+  }
+
+  &.sm {
+    height: 12px;
+    width: 12px;
+  }
+  &.md {
+    height: 14px;
+    width: 14px;
+  }
+  &.lg {
+    height: 16px;
+    width: 16px;
+  }
+  &.xl {
+    height: 18px;
+    width: 18px;
+  }
+
+  &.rotate {
+    transform: rotate(180deg);
+  }
+  &.pointer {
+    cursor: pointer;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: $Blue;
+  font-weight: 600;
+  cursor: pointer;
+
+  &.danger {
+    color: $danger;
+    font-weight: bold;
+  }
+}
+
+@keyframes btnShimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+p,
+span {
+  &.subtle {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  &.empahsis {
+    font-weight: 400;
+  }
+  &.error{
+    color: $danger;
+  }
+}

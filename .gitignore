@@ -1,0 +1,11 @@
+.env
+.vscode
+
+volumes
+
+backend/static/**
+**/__pycache__/*
+
+backend/static/*
+backend/staticfiles/*
+backend/media/*

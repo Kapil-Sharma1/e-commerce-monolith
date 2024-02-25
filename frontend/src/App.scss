@@ -1,0 +1,13 @@
+@import './theme/typography.scss', './theme/forms.scss', './theme/global.scss',
+  './theme/variables.scss';
+
+* {
+  //   font-family: 'Open Sans';
+  font-size: 14px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

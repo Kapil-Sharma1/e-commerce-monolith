@@ -1,0 +1,569 @@
+[
+{
+  "model": "configuration.subscription",
+  "pk": 5,
+  "fields": {
+    "created": "2023-10-13T07:32:45.355Z",
+    "modified": "2023-10-13T07:34:20.850Z",
+    "uid": "27a2e76c-6c5a-421b-a050-c6442054ef44",
+    "type": "BOOL_AND_VALUE",
+    "name": "Speed Limit",
+    "icon": "subscription/27a2e76c-6c5a-421b-a050-c6442054ef44/icon/speed_limit.png",
+    "default_value": 50.0,
+    "internal_name": "Speed Limit",
+    "default_state": false
+  }
+},
+{
+  "model": "configuration.subscription",
+  "pk": 6,
+  "fields": {
+    "created": "2023-10-13T07:35:09.874Z",
+    "modified": "2023-10-13T07:35:09.874Z",
+    "uid": "ffd10613-5439-4e79-8665-89e40ae3bdb0",
+    "type": "BOOL_AND_VALUE",
+    "name": "Hill Hold",
+    "icon": "subscription/ffd10613-5439-4e79-8665-89e40ae3bdb0/icon/hill_hold.jpg",
+    "default_value": 1.5,
+    "internal_name": "Hill Hold",
+    "default_state": false
+  }
+},
+{
+  "model": "configuration.subscription",
+  "pk": 7,
+  "fields": {
+    "created": "2023-10-13T07:36:06.769Z",
+    "modified": "2023-10-13T07:36:06.769Z",
+    "uid": "b23da581-aa3e-44c4-aa0f-2582d9cf808a",
+    "type": "BOOL_AND_VALUE",
+    "name": "Auto Engage",
+    "icon": "subscription/b23da581-aa3e-44c4-aa0f-2582d9cf808a/icon/auto_engage.png",
+    "default_value": 1.0,
+    "internal_name": "Auto Engage",
+    "default_state": false
+  }
+},
+{
+  "model": "configuration.subscription",
+  "pk": 8,
+  "fields": {
+    "created": "2023-10-13T07:38:01.021Z",
+    "modified": "2023-10-13T07:38:01.021Z",
+    "uid": "e11c485a-f7df-4cdf-9610-5c5b5c7d5ece",
+    "type": "BOOL_AND_VALUE",
+    "name": "Cruise Control",
+    "icon": "subscription/e11c485a-f7df-4cdf-9610-5c5b5c7d5ece/icon/damage2.jpg",
+    "default_value": 10.0,
+    "internal_name": "Cruise Control",
+    "default_state": false
+  }
+},
+{
+  "model": "configuration.subscription",
+  "pk": 9,
+  "fields": {
+    "created": "2023-10-13T07:42:33.492Z",
+    "modified": "2023-10-13T07:44:18.498Z",
+    "uid": "4dbe7875-eee0-474d-ab7b-53d6c8d4f043",
+    "type": "CHOICE_AND_VALUE",
+    "name": "Mode",
+    "icon": "subscription/4dbe7875-eee0-474d-ab7b-53d6c8d4f043/icon/123.jpg",
+    "default_value": 5.0,
+    "internal_name": "Mode",
+    "default_state": false
+  }
+},
+{
+  "model": "configuration.subscriptionvalue",
+  "pk": 8,
+  "fields": {
+    "created": "2023-10-13T07:32:46.313Z",
+    "modified": "2023-10-13T07:34:20.851Z",
+    "uid": "fab01e9a-d270-425f-bde3-aa3c710ff2c7",
+    "value": 50.0,
+    "subscription": 5
+  }
+},
+{
+  "model": "configuration.subscriptionvalue",
+  "pk": 9,
+  "fields": {
+    "created": "2023-10-13T07:32:46.316Z",
+    "modified": "2023-10-13T07:34:20.852Z",
+    "uid": "9c0d952a-c1a5-4e4f-8e2c-8274611ef1ac",
+    "value": 60.0,
+    "subscription": 5
+  }
+},
+{
+  "model": "configuration.subscriptionvalue",
+  "pk": 10,
+  "fields": {
+    "created": "2023-10-13T07:32:46.317Z",
+    "modified": "2023-10-13T07:34:20.852Z",
+    "uid": "ef75b68b-258a-4750-a364-7cd943b72b53",
+    "value": 70.0,
+    "subscription": 5
+  }
+},
+{
+  "model": "configuration.subscriptionvalue",
+  "pk": 11,
+  "fields": {
+    "created": "2023-10-13T07:32:46.318Z",
+    "modified": "2023-10-13T07:34:20.853Z",
+    "uid": "f352012d-c595-47eb-bf59-80d7bca48895",
+    "value": 80.0,
+    "subscription": 5
+  }
+},
+{
+  "model": "configuration.subscriptionvalue",
+  "pk": 12,
+  "fields": {
+    "created": "2023-10-13T07:32:46.318Z",
+    "modified": "2023-10-13T07:34:20.854Z",
+    "uid": "3493b748-54a6-4ce0-b6a6-785d0c114a69",
+    "value": 90.0,
+    "subscription": 5
+  }
+},
+{
+  "model": "configuration.subscriptionvalue",
+  "pk": 13,
+  "fields": {
+    "created": "2023-10-13T07:35:10.193Z",
+    "modified": "2023-10-13T07:35:10.193Z",
+    "uid": "d54608e0-7d24-47ed-98d3-6a190398689f",
+    "value": 1.5,
+    "subscription": 6
+  }
+},
+{
+  "model": "configuration.subscriptionvalue",
+  "pk": 14,
+  "fields": {
+    "created": "2023-10-13T07:35:10.195Z",
+    "modified": "2023-10-13T07:35:10.195Z",
+    "uid": "a0810d8d-2e2a-4383-bc3d-3d8bf734cb3a",
+    "value": 1.6,
+    "subscription": 6
+  }
+},
+{
+  "model": "configuration.subscriptionvalue",
+  "pk": 15,
+  "fields": {
+    "created": "2023-10-13T07:35:10.196Z",
+    "modified": "2023-10-13T07:35:10.196Z",
+    "uid": "144ef53c-5ada-453f-b020-96698f8d71e2",
+    "value": 1.7,
+    "subscription": 6
+  }
+},
+{
+  "model": "configuration.subscriptionvalue",
+  "pk": 16,
+  "fields": {
+    "created": "2023-10-13T07:35:10.197Z",
+    "modified": "2023-10-13T07:35:10.198Z",
+    "uid": "6ac21498-838b-43b7-8fcf-c75ea55dbdbf",
+    "value": 1.8,
+    "subscription": 6
+  }
+},
+{
+  "model": "configuration.subscriptionvalue",
+  "pk": 17,
+  "fields": {
+    "created": "2023-10-13T07:35:10.199Z",
+    "modified": "2023-10-13T07:35:10.199Z",
+    "uid": "d30322dd-8b53-4267-827a-117157cd5472",
+    "value": 1.9,
+    "subscription": 6
+  }
+},
+{
+  "model": "configuration.subscriptionvalue",
+  "pk": 18,
+  "fields": {
+    "created": "2023-10-13T07:36:07.056Z",
+    "modified": "2023-10-13T07:36:07.056Z",
+    "uid": "af91c705-0e95-4f72-b08a-db15c66756aa",
+    "value": 1.0,
+    "subscription": 7
+  }
+},
+{
+  "model": "configuration.subscriptionvalue",
+  "pk": 19,
+  "fields": {
+    "created": "2023-10-13T07:36:07.058Z",
+    "modified": "2023-10-13T07:36:07.058Z",
+    "uid": "38f7d872-2343-4946-9e88-dd01e2cd9081",
+    "value": 2.0,
+    "subscription": 7
+  }
+},
+{
+  "model": "configuration.subscriptionvalue",
+  "pk": 20,
+  "fields": {
+    "created": "2023-10-13T07:36:07.059Z",
+    "modified": "2023-10-13T07:36:07.059Z",
+    "uid": "35b019a8-e28e-4970-8f26-e9076ed420eb",
+    "value": 3.0,
+    "subscription": 7
+  }
+},
+{
+  "model": "configuration.subscriptionvalue",
+  "pk": 21,
+  "fields": {
+    "created": "2023-10-13T07:36:07.060Z",
+    "modified": "2023-10-13T07:36:07.060Z",
+    "uid": "cbeaba06-2f68-421b-82e0-e3054e059a33",
+    "value": 4.0,
+    "subscription": 7
+  }
+},
+{
+  "model": "configuration.subscriptionvalue",
+  "pk": 22,
+  "fields": {
+    "created": "2023-10-13T07:36:07.061Z",
+    "modified": "2023-10-13T07:36:07.061Z",
+    "uid": "b759d29e-c65e-49c7-829f-60cc00e20eaf",
+    "value": 5.0,
+    "subscription": 7
+  }
+},
+{
+  "model": "configuration.subscriptionvalue",
+  "pk": 23,
+  "fields": {
+    "created": "2023-10-13T07:38:01.473Z",
+    "modified": "2023-10-13T07:38:01.473Z",
+    "uid": "1a704db8-fcb9-4db9-af40-c557236552fe",
+    "value": 10.0,
+    "subscription": 8
+  }
+},
+{
+  "model": "configuration.subscriptionvalue",
+  "pk": 24,
+  "fields": {
+    "created": "2023-10-13T07:38:01.474Z",
+    "modified": "2023-10-13T07:38:01.474Z",
+    "uid": "420042eb-d771-4ac3-9089-2888632e8277",
+    "value": 20.0,
+    "subscription": 8
+  }
+},
+{
+  "model": "configuration.subscriptionvalue",
+  "pk": 25,
+  "fields": {
+    "created": "2023-10-13T07:38:01.474Z",
+    "modified": "2023-10-13T07:38:01.474Z",
+    "uid": "5102b151-2668-41bb-8028-a972a4a72e7f",
+    "value": 30.0,
+    "subscription": 8
+  }
+},
+{
+  "model": "configuration.subscriptionvalue",
+  "pk": 26,
+  "fields": {
+    "created": "2023-10-13T07:38:01.474Z",
+    "modified": "2023-10-13T07:38:01.474Z",
+    "uid": "2d0f993f-8d3a-43d4-bf46-35d6e55b58c0",
+    "value": 40.0,
+    "subscription": 8
+  }
+},
+{
+  "model": "configuration.subscriptionvalue",
+  "pk": 27,
+  "fields": {
+    "created": "2023-10-13T07:38:01.475Z",
+    "modified": "2023-10-13T07:38:01.475Z",
+    "uid": "d702d8f9-11db-4f3f-acbd-52626d1be2df",
+    "value": 50.0,
+    "subscription": 8
+  }
+},
+{
+  "model": "configuration.subscriptionoption",
+  "pk": 4,
+  "fields": {
+    "created": "2023-10-13T07:42:35.029Z",
+    "modified": "2023-10-13T07:42:35.029Z",
+    "uid": "397aa2fd-91a3-471f-a2d2-466661e03171",
+    "subscription": 9,
+    "icon": "subscription/397aa2fd-91a3-471f-a2d2-466661e03171/subscriptionOption/icon/sports.png",
+    "name": "Sports",
+    "default_value": 5.0
+  }
+},
+{
+  "model": "configuration.subscriptionoption",
+  "pk": 5,
+  "fields": {
+    "created": "2023-10-13T07:42:35.140Z",
+    "modified": "2023-10-13T07:42:35.140Z",
+    "uid": "43e7ba92-1625-47a2-aa38-aa5bcdd56209",
+    "subscription": 9,
+    "icon": "subscription/43e7ba92-1625-47a2-aa38-aa5bcdd56209/subscriptionOption/icon/20210703_101603.jpg",
+    "name": "City",
+    "default_value": 5.0
+  }
+},
+{
+  "model": "configuration.subscriptionoption",
+  "pk": 6,
+  "fields": {
+    "created": "2023-10-13T07:42:35.469Z",
+    "modified": "2023-10-13T07:42:35.469Z",
+    "uid": "12baad65-0427-4431-bc69-c76f24a192f5",
+    "subscription": 9,
+    "icon": "subscription/12baad65-0427-4431-bc69-c76f24a192f5/subscriptionOption/icon/eco.png",
+    "name": "Eco",
+    "default_value": 5.0
+  }
+},
+{
+  "model": "configuration.subscriptionoption",
+  "pk": 7,
+  "fields": {
+    "created": "2023-10-13T07:44:18.499Z",
+    "modified": "2023-10-13T07:44:18.499Z",
+    "uid": "c271ff34-f277-4af8-905f-188331445f57",
+    "subscription": 9,
+    "icon": "subscription/c271ff34-f277-4af8-905f-188331445f57/subscriptionOption/icon/61w1kYdkt7L._AC_SL1210_.jpg",
+    "name": "Comfort",
+    "default_value": 5.0
+  }
+},
+{
+  "model": "configuration.allowedvalue",
+  "pk": 10,
+  "fields": {
+    "created": "2023-10-13T07:42:35.581Z",
+    "modified": "2023-10-13T07:42:35.581Z",
+    "uid": "00d1be7c-101e-4eb9-9169-cff387e3b504",
+    "subscription_option": 4,
+    "value": 5.0
+  }
+},
+{
+  "model": "configuration.allowedvalue",
+  "pk": 11,
+  "fields": {
+    "created": "2023-10-13T07:42:35.584Z",
+    "modified": "2023-10-13T07:42:35.584Z",
+    "uid": "4c65941a-ce0f-42aa-af61-812c309d1a8f",
+    "subscription_option": 4,
+    "value": 10.0
+  }
+},
+{
+  "model": "configuration.allowedvalue",
+  "pk": 12,
+  "fields": {
+    "created": "2023-10-13T07:42:35.585Z",
+    "modified": "2023-10-13T07:42:35.585Z",
+    "uid": "d3468bb6-35a3-4704-aa0d-df857917ea5f",
+    "subscription_option": 4,
+    "value": 15.0
+  }
+},
+{
+  "model": "configuration.allowedvalue",
+  "pk": 13,
+  "fields": {
+    "created": "2023-10-13T07:42:35.586Z",
+    "modified": "2023-10-13T07:42:35.586Z",
+    "uid": "d2e8fea2-66ac-4ed4-b898-8572bf46e146",
+    "subscription_option": 4,
+    "value": 20.0
+  }
+},
+{
+  "model": "configuration.allowedvalue",
+  "pk": 14,
+  "fields": {
+    "created": "2023-10-13T07:42:35.586Z",
+    "modified": "2023-10-13T07:42:35.586Z",
+    "uid": "179fac65-9968-42a5-8745-42297a090ee5",
+    "subscription_option": 4,
+    "value": 25.0
+  }
+},
+{
+  "model": "configuration.allowedvalue",
+  "pk": 15,
+  "fields": {
+    "created": "2023-10-13T07:42:35.587Z",
+    "modified": "2023-10-13T07:42:35.587Z",
+    "uid": "75439b39-06c1-41df-b9cb-1fba5b051346",
+    "subscription_option": 5,
+    "value": 5.0
+  }
+},
+{
+  "model": "configuration.allowedvalue",
+  "pk": 16,
+  "fields": {
+    "created": "2023-10-13T07:42:35.587Z",
+    "modified": "2023-10-13T07:42:35.587Z",
+    "uid": "e5530098-4ba4-481b-8b9b-7f532d7d61de",
+    "subscription_option": 5,
+    "value": 10.0
+  }
+},
+{
+  "model": "configuration.allowedvalue",
+  "pk": 17,
+  "fields": {
+    "created": "2023-10-13T07:42:35.587Z",
+    "modified": "2023-10-13T07:42:35.587Z",
+    "uid": "5e0149f5-c07c-4e4f-9cde-9a03ef33e99b",
+    "subscription_option": 5,
+    "value": 15.0
+  }
+},
+{
+  "model": "configuration.allowedvalue",
+  "pk": 18,
+  "fields": {
+    "created": "2023-10-13T07:42:35.588Z",
+    "modified": "2023-10-13T07:42:35.588Z",
+    "uid": "4eedc38b-7be9-4010-af7d-54a88303af21",
+    "subscription_option": 5,
+    "value": 20.0
+  }
+},
+{
+  "model": "configuration.allowedvalue",
+  "pk": 19,
+  "fields": {
+    "created": "2023-10-13T07:42:35.588Z",
+    "modified": "2023-10-13T07:42:35.588Z",
+    "uid": "98cc9bc9-82cf-4aa8-abd0-9634363a1969",
+    "subscription_option": 5,
+    "value": 25.0
+  }
+},
+{
+  "model": "configuration.allowedvalue",
+  "pk": 20,
+  "fields": {
+    "created": "2023-10-13T07:42:35.589Z",
+    "modified": "2023-10-13T07:42:35.589Z",
+    "uid": "e4baa97f-3bcf-4e77-abfa-233911a32dd9",
+    "subscription_option": 6,
+    "value": 5.0
+  }
+},
+{
+  "model": "configuration.allowedvalue",
+  "pk": 21,
+  "fields": {
+    "created": "2023-10-13T07:42:35.589Z",
+    "modified": "2023-10-13T07:42:35.589Z",
+    "uid": "a5f38162-4fd1-4255-b646-8461df2f7b43",
+    "subscription_option": 6,
+    "value": 10.0
+  }
+},
+{
+  "model": "configuration.allowedvalue",
+  "pk": 22,
+  "fields": {
+    "created": "2023-10-13T07:42:35.590Z",
+    "modified": "2023-10-13T07:42:35.590Z",
+    "uid": "255e9d31-1e6d-414a-9913-6a95c35fc24f",
+    "subscription_option": 6,
+    "value": 15.0
+  }
+},
+{
+  "model": "configuration.allowedvalue",
+  "pk": 23,
+  "fields": {
+    "created": "2023-10-13T07:42:35.590Z",
+    "modified": "2023-10-13T07:42:35.590Z",
+    "uid": "89a8b416-1544-473e-af16-03e14ae85713",
+    "subscription_option": 6,
+    "value": 20.0
+  }
+},
+{
+  "model": "configuration.allowedvalue",
+  "pk": 24,
+  "fields": {
+    "created": "2023-10-13T07:42:35.590Z",
+    "modified": "2023-10-13T07:42:35.590Z",
+    "uid": "2c2206dc-96fd-4237-ab12-e795a4ec0585",
+    "subscription_option": 6,
+    "value": 25.0
+  }
+},
+{
+  "model": "configuration.allowedvalue",
+  "pk": 25,
+  "fields": {
+    "created": "2023-10-13T07:44:18.865Z",
+    "modified": "2023-10-13T07:44:18.865Z",
+    "uid": "8ad8bbad-50b0-4da8-a2bc-48f500c613ff",
+    "subscription_option": 7,
+    "value": 5.0
+  }
+},
+{
+  "model": "configuration.allowedvalue",
+  "pk": 26,
+  "fields": {
+    "created": "2023-10-13T07:44:18.866Z",
+    "modified": "2023-10-13T07:44:18.866Z",
+    "uid": "c23bc63a-bf8a-454f-9243-f8885f204793",
+    "subscription_option": 7,
+    "value": 10.0
+  }
+},
+{
+  "model": "configuration.allowedvalue",
+  "pk": 27,
+  "fields": {
+    "created": "2023-10-13T07:44:18.867Z",
+    "modified": "2023-10-13T07:44:18.867Z",
+    "uid": "669e840c-d24b-4c7e-8b19-80ed9c16e1f9",
+    "subscription_option": 7,
+    "value": 15.0
+  }
+},
+{
+  "model": "configuration.allowedvalue",
+  "pk": 28,
+  "fields": {
+    "created": "2023-10-13T07:44:18.868Z",
+    "modified": "2023-10-13T07:44:18.868Z",
+    "uid": "a04be634-9008-4b5a-843e-bfda401e8597",
+    "subscription_option": 7,
+    "value": 20.0
+  }
+},
+{
+  "model": "configuration.allowedvalue",
+  "pk": 29,
+  "fields": {
+    "created": "2023-10-13T07:44:18.868Z",
+    "modified": "2023-10-13T07:44:18.868Z",
+    "uid": "518c83a3-2067-4fa5-8fc4-8ed4541fadd5",
+    "subscription_option": 7,
+    "value": 25.0
+  }
+}
+]

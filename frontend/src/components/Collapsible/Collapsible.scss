@@ -1,0 +1,20 @@
+@import '../../theme/variables.scss', '../../theme/transitions.scss';
+
+.collapsible-container {
+  .title-section {
+    cursor: pointer;
+    margin: $spacing-2 0;
+
+    & > h5,
+    & > span {
+      display: inline-block;
+      margin: 0 $spacing-2 0 0;
+    }
+  }
+
+  .collapsible-content {
+    max-height: 0px;
+    transition: all $transition-shorter ease-out;
+    overflow: hidden;
+  }
+}

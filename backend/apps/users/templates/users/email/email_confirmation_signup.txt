@@ -1,0 +1,5 @@
+Hi {{user}}
+
+You are receiving this email as you have signed up
+
+{{activate_url}}

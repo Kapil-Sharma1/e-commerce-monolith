@@ -1,0 +1,3 @@
+[submodule "ncfe"]
+	path = ncfe
+	url = git@bitbucket.org:jaivsv/ncfe.git

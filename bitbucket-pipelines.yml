@@ -1,0 +1,58 @@
+image: docker:stable
+
+options:
+  docker: true
+#  size: 2x
+
+definitions:
+  testStep: &testStep
+    step:
+      name: Build and test
+      caches:
+        - node
+        - pip
+        - docker
+        - composer
+      script:
+        - apk add --update --no-cache curl py-pip
+        - apk add --no-cache py-pip python3-dev libffi-dev openssl-dev gcc libc-dev make
+        - pip install cryptography==2.8 docker-compose
+        - pip install --upgrade pip
+        - cp .env.template .env
+        - docker-compose up --build -d
+        - docker-compose ps
+        - docker-compose exec -T backend bash -c "python manage.py test"
+        - docker-compose down
+
+pipelines:
+  default:
+    - <<: *testStep
+  branches:
+    develop:
+      - step:
+          name: Deploy to development
+          caches:
+            - node
+            - pip
+            - docker
+            - composer
+          script:
+            - apk add --update --no-cache curl py-pip
+            - apk add --no-cache py-pip python3-dev libffi-dev openssl-dev gcc libc-dev make
+            - pip install --upgrade pip
+            - pip install fabric cryptography==2.8
+            - fab deploy-dev
+    staging:
+      - step:
+          name: Deploy to Staging
+          caches:
+            - node
+            - pip
+            - docker
+            - composer
+          script:
+            - apk add --update --no-cache curl py-pip
+            - apk add --no-cache py-pip python3-dev libffi-dev openssl-dev gcc libc-dev make
+            - pip install --upgrade pip
+            - pip install fabric cryptography==2.8
+            - fab deploy-staging

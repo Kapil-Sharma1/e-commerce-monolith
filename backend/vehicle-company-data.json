@@ -1,0 +1,178 @@
+[
+{
+    "model": "vehicle.company",
+    "pk": 2,
+    "fields": {
+        "created": "2024-02-06T00:42:32.559Z",
+        "modified": "2024-02-06T00:42:32.559Z",
+        "uid": "ad8c9a36-d037-4e9b-8d09-2f4baaf94dac",
+        "name": "Toyota",
+        "icon": "company/ad8c9a36-d037-4e9b-8d09-2f4baaf94dac/icon/toyota.jpg"
+    }
+},
+{
+    "model": "vehicle.company",
+    "pk": 3,
+    "fields": {
+        "created": "2024-02-06T00:45:09.296Z",
+        "modified": "2024-02-06T00:45:09.296Z",
+        "uid": "1ff1a0f1-cee1-489b-adb4-710168e46623",
+        "name": "Mahindra",
+        "icon": "company/1ff1a0f1-cee1-489b-adb4-710168e46623/icon/mahindra.png"
+    }
+},
+{
+    "model": "vehicle.company",
+    "pk": 4,
+    "fields": {
+        "created": "2024-02-06T00:46:45.936Z",
+        "modified": "2024-02-06T00:46:45.936Z",
+        "uid": "3d378652-800c-4491-a739-22b975cacd4f",
+        "name": "Maruti Suzuki",
+        "icon": "company/3d378652-800c-4491-a739-22b975cacd4f/icon/suzuki.png"
+    }
+},
+{
+    "model": "vehicle.company",
+    "pk": 5,
+    "fields": {
+        "created": "2024-02-06T00:48:57.713Z",
+        "modified": "2024-02-06T00:48:57.713Z",
+        "uid": "010fbdb8-6fc1-48c6-91ad-127d0bb4cf0e",
+        "name": "Tata",
+        "icon": "company/010fbdb8-6fc1-48c6-91ad-127d0bb4cf0e/icon/tata.png"
+    }
+},
+{
+    "model": "vehicle.company",
+    "pk": 6,
+    "fields": {
+        "created": "2024-02-06T00:54:41.899Z",
+        "modified": "2024-02-06T00:54:41.899Z",
+        "uid": "562b3f9a-d61d-4cb5-bc32-f7c2cfd0b3be",
+        "name": "Hyundai",
+        "icon": "company/562b3f9a-d61d-4cb5-bc32-f7c2cfd0b3be/icon/hyundai.png"
+    }
+},
+{
+    "model": "vehicle.company",
+    "pk": 7,
+    "fields": {
+        "created": "2024-02-06T00:59:04.427Z",
+        "modified": "2024-02-06T00:59:04.427Z",
+        "uid": "e1685651-0205-4340-83a5-8e495f2a596e",
+        "name": "Renault",
+        "icon": "company/e1685651-0205-4340-83a5-8e495f2a596e/icon/renault.jpg"
+    }
+},
+{
+    "model": "vehicle.company",
+    "pk": 8,
+    "fields": {
+        "created": "2024-02-06T01:01:52.857Z",
+        "modified": "2024-02-06T01:01:52.857Z",
+        "uid": "2349bc5c-51c5-4619-845f-4398462c301b",
+        "name": "Skoda",
+        "icon": "company/2349bc5c-51c5-4619-845f-4398462c301b/icon/skoda.jpg"
+    }
+},
+{
+    "model": "vehicle.company",
+    "pk": 9,
+    "fields": {
+        "created": "2024-02-06T01:07:14.672Z",
+        "modified": "2024-02-06T01:07:14.672Z",
+        "uid": "e3cdf435-3fce-4c8b-b2de-eb6c93e176c9",
+        "name": "Force",
+        "icon": "company/e3cdf435-3fce-4c8b-b2de-eb6c93e176c9/icon/Force.png"
+    }
+},
+{
+    "model": "vehicle.company",
+    "pk": 10,
+    "fields": {
+        "created": "2024-02-06T01:16:58.997Z",
+        "modified": "2024-02-06T01:16:58.997Z",
+        "uid": "df4b2cc9-3e87-4d10-a4ba-99987347d897",
+        "name": "Chevrolet",
+        "icon": "company/df4b2cc9-3e87-4d10-a4ba-99987347d897/icon/cheverlot.jpg"
+    }
+},
+{
+    "model": "vehicle.company",
+    "pk": 11,
+    "fields": {
+        "created": "2024-02-06T01:22:11.120Z",
+        "modified": "2024-02-06T01:22:11.120Z",
+        "uid": "1f0e5ec1-805f-44e3-8d3b-96305a145a72",
+        "name": "Honda",
+        "icon": "company/1f0e5ec1-805f-44e3-8d3b-96305a145a72/icon/honda.jpg"
+    }
+},
+{
+    "model": "vehicle.company",
+    "pk": 12,
+    "fields": {
+        "created": "2024-02-06T01:23:59.302Z",
+        "modified": "2024-02-06T01:23:59.302Z",
+        "uid": "bcb35b1a-e530-458e-9ffe-234b10c88b30",
+        "name": "Kia",
+        "icon": "company/bcb35b1a-e530-458e-9ffe-234b10c88b30/icon/kia.png"
+    }
+},
+{
+    "model": "vehicle.company",
+    "pk": 13,
+    "fields": {
+        "created": "2024-02-06T02:41:31.958Z",
+        "modified": "2024-02-06T02:41:31.958Z",
+        "uid": "778a7702-5710-40a1-bc6c-16c2ad0499a2",
+        "name": "Nissan",
+        "icon": "company/778a7702-5710-40a1-bc6c-16c2ad0499a2/icon/nissan.jpg"
+    }
+},
+{
+    "model": "vehicle.company",
+    "pk": 14,
+    "fields": {
+        "created": "2024-02-06T03:11:35.565Z",
+        "modified": "2024-02-06T03:11:35.565Z",
+        "uid": "a6062ecc-2df6-4678-b32a-cd8e0df77d73",
+        "name": "Datsun",
+        "icon": "company/a6062ecc-2df6-4678-b32a-cd8e0df77d73/icon/datsun.jpg"
+    }
+},
+{
+    "model": "vehicle.company",
+    "pk": 15,
+    "fields": {
+        "created": "2024-02-06T06:16:31.909Z",
+        "modified": "2024-02-06T06:16:31.909Z",
+        "uid": "3712ef78-eeb0-4f81-a1ea-b61c493a0dac",
+        "name": "Jeep",
+        "icon": "company/3712ef78-eeb0-4f81-a1ea-b61c493a0dac/icon/jeep.jpg"
+    }
+},
+{
+    "model": "vehicle.company",
+    "pk": 16,
+    "fields": {
+        "created": "2024-02-06T06:35:48.270Z",
+        "modified": "2024-02-06T06:35:48.270Z",
+        "uid": "5a013d0d-a27f-4316-855f-80b3b78d6037",
+        "name": "Ford",
+        "icon": "company/5a013d0d-a27f-4316-855f-80b3b78d6037/icon/ford.jpg"
+    }
+},
+{
+    "model": "vehicle.company",
+    "pk": 17,
+    "fields": {
+        "created": "2024-02-06T07:18:27.336Z",
+        "modified": "2024-02-06T07:18:27.336Z",
+        "uid": "927abba1-7e19-4146-bbe7-c7e82ab3b3b0",
+        "name": "Volkswagen",
+        "icon": "company/927abba1-7e19-4146-bbe7-c7e82ab3b3b0/icon/volkswagen.jpg"
+    }
+}
+]

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Test</title>
+</head>
+<body>
+    <h1>WebSocket Test</h1>
+    <div id="output"></div>
+    <button onclick="sendMessage()">Send Message</button>
+
+    <script>
+        //for testing purpose, hardcoded the user and vehicle uid's
+        //const fixedUserUID = 'db588a12-8b2c-4821-821f-86942dae18da';
+        //const fixedVehicleUID = 'd9f3a25e-1c3e-4828-9fa7-8f3b5c07bbdb'; 
+        const fixedNexCruiseUID = '31b23361-d498-4d34-a6b3-6703e7aebd48'; 
+
+        // NOTE: This template is of no use in backend its just to test the django channel functionality
+        //const socket = new WebSocket(`ws://localhost:8000/ws/logs/${fixedUserUID}/${fixedVehicleUID}/`); //for vehicle running logs
+       const socket = new WebSocket(`ws://localhost:8000/ws/device-logs/${fixedNexCruiseUID}/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA5MDkwODQ2LCJpYXQiOjE3MDc3OTQ4NDYsImp0aSI6IjFmMjU5ZDQ5ZGJhYjQxNTJhOGM3NmFhZWRhNzA4MTY4IiwidXNlcl9pZCI6Mn0.Uys4JirSnPy_0GOgBhGZ9BdvnAAdC0PF0Dj3HS8TY7Q`); //for device error logs
+
+        socket.addEventListener('open', (event) => {
+            console.log('WebSocket connection opened:', event);
+            document.getElementById('output').innerHTML = 'WebSocket connection opened';
+        });
+
+        socket.addEventListener('message', (event) => {
+            console.log('WebSocket message received:', event.data);
+            document.getElementById('output').innerHTML = `Message received: ${event.data}`;
+        });
+
+        socket.addEventListener('close', (event) => {
+            console.log('WebSocket connection closed:', event);
+            document.getElementById('output').innerHTML = 'WebSocket connection closed';
+        });
+
+        socket.addEventListener('error', (event) => {
+            console.error('WebSocket error:', event);
+            document.getElementById('output').innerHTML = 'WebSocket error';
+        });
+
+        function sendMessage() {
+            const message = 'Jai Shree Balaji!';
+        
+            const data = {
+                message,
+            };
+        
+            socket.send(JSON.stringify(data));
+        }
+    </script>
+</body>
+</html>
