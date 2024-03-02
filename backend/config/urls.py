@@ -19,11 +19,10 @@ from django.conf.urls import url
 from django.conf import settings
 from django.views.generic import TemplateView
 from django.conf.urls.static import static
-from apps.users.views import VerifyEmailView
 from django.conf.urls import url
 from rest_framework_swagger.views import get_swagger_view
 
-schema_view = get_swagger_view(title='NEX API')
+schema_view = get_swagger_view(title='ECOMMERCE API')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -31,8 +30,6 @@ urlpatterns = [
     path('api/auth/', include(('apps.users.urls', 'users'), namespace='auth-api')),
 
     path('api/swagger/', schema_view),
-    re_path(r'api/auth/registration/account-confirm-email/',
-            VerifyEmailView.as_view(), name='account_email_verification_sent'),
 
     url(r'^rest-auth/registration/', include('rest_auth.registration.urls')),
 

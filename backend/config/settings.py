@@ -356,3 +356,10 @@ LOGGING = {
 REST_AUTH_SERIALIZERS = {
     'USER_DETAILS_SERIALIZER': 'apps.users.serializers.UserDetailsSerializer',
 }
+
+# TWo factor OTP
+TWO_FACTOR_API_KEY = env.str('TWO_FACTOR_API_KEY', default="")
+TWO_FACTOR_BASE_URL = env.str('TWO_FACTOR_BASE_URL', default="")
+
+# Google client id
+GOOGLE_CLIENT_ID = env.str('GOOGLE_CLIENT_ID', default='')
